@@ -2,11 +2,62 @@
 ------------------------------------------------*/
 #header {
 	margin-bottom: 3em;	
+    position: relative;
+	height:250px;
+
+	#branding {
+		position:absolute;
+		left: 10%;
+        @include simple-transform(null, null, -10%);
+
+        #site-title {
+        	position:absolute;
+        	top: 50%;
+        	@include simple-transform(null, null, null, -50%);
+    		width: 100%;
+    		height:200px;
+
+    		&>div {
+    			position:absolute;
+    			left:50%;
+    		}
+
+        	&>div:first-of-type {
+	        	text-transform: uppercase;
+   				font-size: 2em;
+   				top:40%;
+   				display: inline;
+        		@include simple-transform(null, null, -50%, -40%);
+        		font-family: oswald, helvetica, san-serif;
+        		font-weight: 700;
+        		color:#fff;
+        		background:$links;
+	        }
+
+	        &>div:last-of-type {
+	        	text-transform: lowercase;
+   				font-size: 1.2em;
+   				top:60%;
+        		@include simple-transform(null, null, -50%, -60%);
+   				text-align:center;
+        		width:100%;
+	        }
+        }
+
+        
+    	
+		img {
+			max-width:300px;
+		}
+	}
 
 	nav {
 		height: 50px;
     	background: #000;
     	border: #aaa solid 1px;
+    	position: absolute;
+    	bottom: 0;
+    	width: 100%;
 	}
 
     .menu-main-menu-container {

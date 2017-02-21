@@ -23,9 +23,8 @@ function sirius_load_scripts()
 add_action( 'after_setup_theme', 'sirius_setup' );
 function sirius_setup(){
 	sirius_theme_support();
+	sirius_custom_header_setup();
 	sirius_nav_menus();	
-	/*global $content_width;
-	if ( ! isset( $content_width ) ) $content_width = 640;*/
 }
 
 function sirius_theme_support(){
@@ -34,6 +33,27 @@ function sirius_theme_support(){
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
 }
+
+function sirius_custom_header_setup() {
+    $header_info = array(
+        'default-image'      => get_template_directory_uri() . 'images/oakland.png',
+        'width'              => 660,
+        'height'             => 388,
+        'flex-width'         => true,
+        'flex-height'        => true
+    );
+    add_theme_support( 'custom-header', $header_info );
+	 
+	$header_images = array(
+	    'oakland' => array(
+	            'url'           => get_template_directory_uri() . 'images/oakland.png',
+	            'thumbnail_url' => get_template_directory_uri() . '/images/oakland.png',
+	            'description'   => 'Oakland'
+	    )	     
+	);
+	register_default_headers( $header_images );
+}
+
 
 function sirius_nav_menus(){
 	register_nav_menus(

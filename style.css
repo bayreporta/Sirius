@@ -83,32 +83,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Header styles
 ------------------------------------------------*/
 /* line 3, sass/_partials/_header.scss */
-#header nav {
-  height: 50px;
-  background: #000;
-  border: #aaa solid 1px; }
-  /* line 8, sass/_partials/_header.scss */
-  #header nav .menu-main-menu-container {
+#header {
+  margin-bottom: 3em; }
+  /* line 6, sass/_partials/_header.scss */
+  #header nav {
+    height: 50px;
+    background: #000;
+    border: #aaa solid 1px; }
+  /* line 12, sass/_partials/_header.scss */
+  #header .menu-main-menu-container {
     position: relative;
     height: inherit; }
-  /* line 13, sass/_partials/_header.scss */
-  #header nav ul {
+  /* line 17, sass/_partials/_header.scss */
+  #header ul {
     display: inline-flex;
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -moz-transform:  translateY(-50%);
+    -ms-transform:  translateY(-50%);
+    -webkit-transform:  translateY(-50%);
+    transform:  translateY(-50%);
     width: 90%;
     margin: 0 5%; }
-  /* line 23, sass/_partials/_header.scss */
-  #header nav ul li {
+  /* line 27, sass/_partials/_header.scss */
+  #header ul li {
     flex-grow: 1;
     text-align: center; }
-    /* line 27, sass/_partials/_header.scss */
-    #header nav ul li a {
+    /* line 31, sass/_partials/_header.scss */
+    #header ul li a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase; }
-      /* line 32, sass/_partials/_header.scss */
-      #header nav ul li a:hover {
+      /* line 36, sass/_partials/_header.scss */
+      #header ul li a:hover {
         color: #c9283c; }
+
+/* Header styles
+------------------------------------------------*/
+/* line 3, sass/_partials/_footer.scss */
+#footer {
+  height: 50px;
+  background: #000;
+  border: #aaa solid 1px;
+  margin-top: 3em;
+  position: relative; }
+  /* line 10, sass/_partials/_footer.scss */
+  #footer #copyright {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    -moz-transform:  translateY(-50%);
+    -ms-transform:  translateY(-50%);
+    -webkit-transform:  translateY(-50%);
+    transform:  translateY(-50%);
+    left: 25px; }

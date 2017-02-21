@@ -1,9 +1,13 @@
 /* Header styles
 ------------------------------------------------*/
-#header nav {
-	height: 50px;
-    background: #000;
-    border: #aaa solid 1px;
+#header {
+	margin-bottom: 3em;	
+
+	nav {
+		height: 50px;
+    	background: #000;
+    	border: #aaa solid 1px;
+	}
 
     .menu-main-menu-container {
     	position: relative;
@@ -15,7 +19,7 @@
     	width: 100%;
     	position: absolute;
     	top: 50%;
-   	 	transform: translateY(-50%);
+        @include simple-transform(null, null, null, -50%);
    	 	width:90%;
    	 	margin:0 5%;
     }

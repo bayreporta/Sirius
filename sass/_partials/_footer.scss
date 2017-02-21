@@ -1,0 +1,24 @@
+/* Header styles
+------------------------------------------------*/
+#footer {
+	height: 50px;
+    background: #000;
+    border: #aaa solid 1px;
+    margin-top: 3em; 
+    position:relative;
+
+    #copyright {
+        color: #fff;
+        position:absolute;
+        top:50%;
+        @include simple-transform(null, null, null, -50%);
+        left:25px;
+
+    }
+
+    #contact {
+
+    }
+
+}
+

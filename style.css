@@ -65,10 +65,32 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* Variables
+------------------------------------------------*/
 /* Media variables and expression aliases
 ------------------------------------------------*/
 /* Import partial scss files
 ------------------------------------------------*/
+/* FONT IMPORTS
+------------------------------------------------*/
+@font-face {
+  font-family: "gotham";
+  src: url("styles/gothamHTF/gothamHTF-Book.ttf"); }
+@font-face {
+  font-family: "oswald";
+  src: url("styles/oswald/Oswald-Light.ttf");
+  font-weight: 300; }
+@font-face {
+  font-family: "oswald";
+  src: url("styles/oswald/Oswald-Regular.ttf"); }
+@font-face {
+  font-family: "oswald";
+  src: url("styles/oswald/Oswald-Medium.ttf");
+  font-weight: 500; }
+@font-face {
+  font-family: "oswald";
+  src: url("styles/oswald/Oswald-Bold.ttf");
+  font-weight: 700; }
 /* Foundational styles
 ------------------------------------------------*/
 /* line 4, sass/_partials/_foundation.scss */
@@ -77,15 +99,35 @@ h1, h2, h3, h4 {
 
 /* line 8, sass/_partials/_foundation.scss */
 div, p, a, span, li {
-  font-family: gothamHTF, oswald, helvetica, san-serif; }
+  font-family: gotham, oswald, helvetica, san-serif; }
 
 /* line 12, sass/_partials/_foundation.scss */
+a {
+  color: #c9283c;
+  text-decoration: none; }
+  /* line 16, sass/_partials/_foundation.scss */
+  a:hover {
+    text-decoration: underline; }
+
+/* line 21, sass/_partials/_foundation.scss */
+p strong {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 1px 0 0 #000, 2px 0 0 #000; }
+
+/* line 27, sass/_partials/_foundation.scss */
+a strong {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 1px 0 0 #c9283c, 2px 0 0 #c9283c; }
+
+/* line 33, sass/_partials/_foundation.scss */
 #container {
-  max-width: 1280px;
+  max-width: 1028px;
   margin: 0 auto;
   width: 80%; }
 @media (min-width: 1028px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1028px) and (min-resolution: 192dpi) {
-  /* line 12, sass/_partials/_foundation.scss */
+  /* line 33, sass/_partials/_foundation.scss */
   #container {
     width: 1920px; } }
 
@@ -127,7 +169,54 @@ div, p, a, span, li {
       #header ul li a:hover {
         color: #c9283c; }
 
-/* Header styles
+/* Base styles for single, page, indexes
+------------------------------------------------*/
+/* line 4, sass/_partials/_content.scss */
+article header {
+  margin-bottom: 2em; }
+
+/* line 10, sass/_partials/_content.scss */
+#content p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 1em;
+  font-weight: 300; }
+/* line 17, sass/_partials/_content.scss */
+#content ul, #content ol {
+  list-style-type: disc;
+  margin-left: 50px; }
+/* line 22, sass/_partials/_content.scss */
+#content li {
+  margin-bottom: 1em; }
+
+/* line 27, sass/_partials/_content.scss */
+.entry-title {
+  margin-bottom: 5px; }
+
+/* line 31, sass/_partials/_content.scss */
+h1.entry-title {
+  font-size: 3rem;
+  font-weight: 700; }
+  /* line 35, sass/_partials/_content.scss */
+  h1.entry-title a {
+    text-decoration: none;
+    color: #000; }
+    /* line 39, sass/_partials/_content.scss */
+    h1.entry-title a:hover {
+      text-decoration: underline; }
+
+/* line 49, sass/_partials/_content.scss */
+.post-edit-link {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  color: #000; }
+
+/* line 56, sass/_partials/_content.scss */
+.entry-content {
+  margin-bottom: 2em; }
+
+/* Footer styles
 ------------------------------------------------*/
 /* line 3, sass/_partials/_footer.scss */
 #footer {

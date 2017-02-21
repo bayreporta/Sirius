@@ -6,11 +6,32 @@ h1,h2,h3,h4 {
 }
 
 div, p, a, span, li {
-	font-family: gothamHTF, oswald, helvetica, san-serif;
+	font-family: gotham, oswald, helvetica, san-serif;
+}
+
+a {
+	color:$links;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p strong {
+	font-weight: 400;
+  	letter-spacing:2px;
+  	text-shadow:1px 0 0 $text,2px 0 0 $text;
+}
+
+a strong {
+	font-weight: 400;
+  	letter-spacing:2px;
+  	text-shadow:1px 0 0 $links, 2px 0 0 $links;
 }
 
 #container {
-  max-width: 1280px;
+  max-width: 1028px;
   margin: 0 auto;
   width:80%;
 

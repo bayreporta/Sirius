@@ -1,0 +1,39 @@
+/* Header styles
+------------------------------------------------*/
+#header nav {
+	height: 50px;
+    background: #000;
+    border: #aaa solid 1px;
+
+    .menu-main-menu-container {
+    	position: relative;
+    	height: inherit;
+    }
+
+    ul {
+    	display: inline-flex;
+    	width: 100%;
+    	position: absolute;
+    	top: 50%;
+   	 	transform: translateY(-50%);
+   	 	width:90%;
+   	 	margin:0 5%;
+    }
+
+    ul li {
+    	flex-grow:1;
+    	text-align: center;
+
+    	a {
+    		color:#fff;
+    		text-decoration: none;
+    		text-transform: uppercase;
+
+    		&:hover {
+    			color:#c9283c;
+    		}
+    	}
+    }
+
+}
+

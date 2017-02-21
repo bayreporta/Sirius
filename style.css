@@ -71,12 +71,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ------------------------------------------------*/
 /* Foundational styles
 ------------------------------------------------*/
-/* line 3, sass/_partials/_foundation.scss */
+/* line 4, sass/_partials/_foundation.scss */
+h1, h2, h3, h4 {
+  font-family: oswald, helvetica, san-serif; }
+
+/* line 8, sass/_partials/_foundation.scss */
+div, p, a, span, li {
+  font-family: gothamHTF, oswald, helvetica, san-serif; }
+
+/* line 12, sass/_partials/_foundation.scss */
 #container {
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 80%; }
 @media (min-width: 1028px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1028px) and (min-resolution: 192dpi) {
-  /* line 3, sass/_partials/_foundation.scss */
+  /* line 12, sass/_partials/_foundation.scss */
   #container {
     width: 1920px; } }
 
@@ -97,7 +106,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 17, sass/_partials/_header.scss */
   #header ul {
     display: inline-flex;
-    width: 100%;
     position: absolute;
     top: 50%;
     -moz-transform:  translateY(-50%);
@@ -106,16 +114,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     transform:  translateY(-50%);
     width: 90%;
     margin: 0 5%; }
-  /* line 27, sass/_partials/_header.scss */
+  /* line 26, sass/_partials/_header.scss */
   #header ul li {
     flex-grow: 1;
     text-align: center; }
-    /* line 31, sass/_partials/_header.scss */
+    /* line 30, sass/_partials/_header.scss */
     #header ul li a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase; }
-      /* line 36, sass/_partials/_header.scss */
+      /* line 35, sass/_partials/_header.scss */
       #header ul li a:hover {
         color: #c9283c; }
 

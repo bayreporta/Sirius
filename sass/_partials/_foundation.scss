@@ -1,8 +1,18 @@
 /* Foundational styles
 ------------------------------------------------*/
+
+h1,h2,h3,h4 {
+	font-family: oswald, helvetica, san-serif;
+}
+
+div, p, a, span, li {
+	font-family: gothamHTF, oswald, helvetica, san-serif;
+}
+
 #container {
   max-width: 1280px;
   margin: 0 auto;
+  width:80%;
 
   @include media($retina_alias...){
     width: 1920px;

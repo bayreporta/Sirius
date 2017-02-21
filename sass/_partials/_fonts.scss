@@ -1,0 +1,21 @@
+/* FONT IMPORTS
+------------------------------------------------*/
+@mixin importFont($font, $src, $weight, $style){
+	@font-face {
+		font-family: $font;
+		src: url($src);
+		@if $weight != 400 {
+			font-weight: $weight;
+		} 
+		@if $style != 'norm'{
+			font-style: $style;
+		}
+	}
+
+}
+
+@include importFont('gotham', 'styles/gothamHTF/gothamHTF-Book.ttf', 400, 'norm');
+@include importFont('oswald', 'styles/oswlad/Oswald-Light.ttf', 300, 'norm');
+@include importFont('oswald', 'styles/oswlad/Oswald-Regular.ttf', 400, 'norm');
+@include importFont('oswald', 'styles/oswlad/Oswald-Medium.ttf', 500, 'norm');
+@include importFont('oswald', 'styles/oswlad/Oswald-Bold.ttf', 700, 'norm');

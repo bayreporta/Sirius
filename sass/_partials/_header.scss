@@ -16,7 +16,6 @@
 
     ul {
     	display: inline-flex;
-    	width: 100%;
     	position: absolute;
     	top: 50%;
         @include simple-transform(null, null, null, -50%);

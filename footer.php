@@ -7,6 +7,7 @@
 	<div id="contact"></div>
 </footer>
 </div>
+<script type="text/javascript" src="<?php get_site_url(); ?>wp-content/themes/sirius/scripts/main.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

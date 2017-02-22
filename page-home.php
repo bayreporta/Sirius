@@ -15,6 +15,9 @@
 						<?php the_content(); ?>
 						<div class="entry-links"><?php wp_link_pages(); ?></div>
 					</section>
+					<section class="video-player" data-embed="GPTY6l_PX5k">
+						<div class="play-button"></div>
+					</section>
 				</div>
 				<div id="home-top-right">
 					<div>

@@ -2,7 +2,7 @@
 
 /* #1: Include core theme files and directories
 ---------------------------------------------------------------------------*/
-define('PARENT_PATH', get_stylesheet_directory());
+define('PARENT_PATH', get_template_directory_uri());
 define('MODULE_PATH', PARENT_PATH . '/modules');
 define('TEMPLATE_PATH', PARENT_PATH . '/templates');
 

@@ -414,8 +414,21 @@ hr {
     #home-top-right > div:last-of-type p {
       padding: 0 10px; }
 
-/* line 51, sass/_partials/_home.scss */
-.video-player {
+/* line 50, sass/_partials/_home.scss */
+#home-bottom {
+  overflow: hidden; }
+
+/* Video styles
+------------------------------------------------*/
+/* line 3, sass/_partials/_video.scss */
+.video-thumb-container {
+  width: 32.3333333333%;
+  float: left;
+  margin-right: 1%; }
+
+/* line 9, sass/_partials/_video.scss */
+.video-player,
+.video-thumb {
   background-color: #000;
   margin-bottom: 30px;
   position: relative;
@@ -423,15 +436,17 @@ hr {
   overflow: hidden;
   cursor: pointer; }
 
-/* line 59, sass/_partials/_home.scss */
-.video-player img {
+/* line 19, sass/_partials/_video.scss */
+.video-player img,
+.video-thumb img {
   width: 100%;
   top: -16.84%;
   left: 0;
   opacity: 0.7; }
 
-/* line 65, sass/_partials/_home.scss */
-.video-player .play-button {
+/* line 26, sass/_partials/_video.scss */
+.video-player .play-button,
+.video-thumb .play-button {
   width: 90px;
   height: 60px;
   background-color: #333;
@@ -440,35 +455,54 @@ hr {
   opacity: 0.8;
   border-radius: 6px; }
 
-/* line 74, sass/_partials/_home.scss */
-.video-player .play-button:before {
+/* line 36, sass/_partials/_video.scss */
+.video-thumb .play-button {
+  width: 70px;
+  height: 40px; }
+
+/* line 40, sass/_partials/_video.scss */
+.video-player .play-button:before,
+.video-thumb .play-button:before {
   content: "";
   border-style: solid;
   border-width: 15px 0 15px 26.0px;
   border-color: transparent transparent transparent #fff; }
 
-/* line 80, sass/_partials/_home.scss */
-.youtube img,
-.youtube .play-button {
+/* line 47, sass/_partials/_video.scss */
+.video-player img,
+.video-player .play-button,
+.video-thumb img,
+.video-thumb .play-button {
   cursor: pointer; }
 
-/* line 84, sass/_partials/_home.scss */
+/* line 53, sass/_partials/_video.scss */
 .video-player img,
 .video-player iframe,
 .video-player .play-button,
-.video-player .play-button:before {
+.video-player .play-button:before,
+.video-thumb img,
+.video-thumb iframe,
+.video-thumb .play-button,
+.video-thumb .play-button:before {
   position: absolute; }
 
-/* line 90, sass/_partials/_home.scss */
+/* line 63, sass/_partials/_video.scss */
 .video-player .play-button,
-.video-player .play-button:before {
+.video-player .play-button:before,
+.video-thumb .play-button,
+.video-thumb .play-button:before {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0); }
 
-/* line 96, sass/_partials/_home.scss */
-.video-player iframe {
+/* line 71, sass/_partials/_video.scss */
+.video-player iframe,
+.video-thumb iframe {
   height: 100%;
   width: 100%;
   top: 0;
   left: 0; }
+
+/* line 80, sass/_partials/_video.scss */
+.video-playing img {
+  opacity: 0.1; }

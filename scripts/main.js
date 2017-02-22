@@ -1,28 +1,51 @@
 /* #1: Lazy Load Youtube Videos
 ----------------------------------------------------------*/
-jQuery(document).ready(function(){
-	var videoes = document.querySelectorAll('.video-player');
-
-	for (var i = 0; i < videoes.length; i++) {
+function loadVideoes(v){
+	for (var i = 0; i < v.length; i++) {
 		//define the youtube source from data-embed attribute on player
-	    var source = "https://img.youtube.com/vi/"+ videoes[i].dataset.embed +"/sddefault.jpg"; 
+		if (v.length === 1){var source = "https://img.youtube.com/vi/"+ v[i].dataset.embed +"/sddefault.jpg";}
+		else {var source = "https://img.youtube.com/vi/"+ v[i].dataset.embed +"/hqdefault.jpg";}
 
-	    //grab thumbnail from video and append
+		//grab thumbnail from video and append
 		var image = new Image();
         image.src = source;
         image.addEventListener( "load", function() {
-            videoes[ i ].appendChild( image );
+            v[ i ].appendChild( image );
         }( i ) );
 
-        // create iframe
-       	videoes[i].addEventListener( "click", function() {
-	        var iframe = document.createElement( "iframe" );
+        //add initial opacity
+        if (i === 0 && v.length > 1){
+        	v[i].className += " video-playing";
+        	v[i].childNodes[1].style.display = 'none';
+        }
+
+        // create iframe, destroy existing one
+       	v[i].addEventListener( "click", function() {
+	        var iframe = document.createElement( "iframe" ),
+	        	player = document.querySelectorAll('.video-player');
+
+	        //opacity on active video and hide play button
+	        jQuery('.video-thumb').removeClass('video-playing');
+	        jQuery('.play-button').show();
+        	this.childNodes[1].style.display = 'none';
+	        this.className += " video-playing";
+
             iframe.setAttribute( "frameborder", "0" );
             iframe.setAttribute( "allowfullscreen", "" );
             iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-            this.innerHTML = "";
-            this.appendChild( iframe );
+            
+            player[0].innerHTML = "";
+            player[0].appendChild( iframe );
     	} );
 
 	}
+}
+
+jQuery(document).ready(function(){
+	var mainVideo = document.querySelectorAll('.video-player'),
+		otherVideos = document.querySelectorAll('.video-thumb');
+
+	loadVideoes(mainVideo);
+	loadVideoes(otherVideos);
 })
+

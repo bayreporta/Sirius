@@ -2,7 +2,7 @@
 <section id="content" role="main">
 	<?php if ( have_posts() ) : ?>
 		<header class="header">
-			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'laniakea' ), get_search_query() ); ?></h1>
+			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'sirius' ), get_search_query() ); ?></h1>
 		</header>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'entry' ); ?>
@@ -11,10 +11,10 @@
 	<?php else : ?>
 		<article id="post-0" class="post no-results not-found">
 			<header class="header">
-				<h2 class="entry-title"><?php _e( 'Nothing Found', 'laniakea' ); ?></h2>
+				<h2 class="entry-title"><?php _e( 'Nothing Found', 'sirius' ); ?></h2>
 			</header>
 			<section class="entry-content">
-				<p><?php _e( 'Sorry, nothing matched your search. Please try again.', 'laniakea' ); ?></p>
+				<p><?php _e( 'Sorry, nothing matched your search. Please try again.', 'sirius' ); ?></p>
 				<?php get_search_form(); ?>
 			</section>
 		</article>

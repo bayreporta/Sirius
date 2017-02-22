@@ -220,6 +220,37 @@ em {
       #header ul li a:hover {
         color: #C9283C; }
 
+/* Images and Captions
+------------------------------------------------*/
+/* line 3, sass/_partials/_images.scss */
+.alignleft {
+  float: left;
+  margin-right: 25px; }
+
+/* line 8, sass/_partials/_images.scss */
+.alignright {
+  float: right;
+  margin-left: 25px; }
+
+/* line 13, sass/_partials/_images.scss */
+.aligncenter {
+  margin: 0 auto; }
+
+/* line 18, sass/_partials/_images.scss */
+.entry-featured-image {
+  margin-bottom: 2em; }
+  /* line 21, sass/_partials/_images.scss */
+  .entry-featured-image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+
+/* line 31, sass/_partials/_images.scss */
+.wp-caption p {
+  color: #666;
+  font-style: italic; }
+
 /* Base styles for single, page, indexes
 ------------------------------------------------*/
 /* line 4, sass/_partials/_content.scss */
@@ -262,7 +293,7 @@ article header {
   top: 50%;
   color: #000;
   z-index: 1000; }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   /* line 53, sass/_partials/_content.scss */
   #content .post-edit-link {
     display: none; } }
@@ -335,3 +366,43 @@ article header {
     -webkit-transform:  translateY(-50%);
     transform:  translateY(-50%);
     left: 25px; }
+
+/* Home Page Styles
+------------------------------------------------*/
+/* line 3, sass/_partials/_home.scss */
+#home-top {
+  overflow: hidden; }
+
+/* line 7, sass/_partials/_home.scss */
+#home-top-left {
+  width: 65%;
+  float: left; }
+  /* line 12, sass/_partials/_home.scss */
+  #home-top-left .entry-title span {
+    font-size: 2rem;
+    color: #C9283C; }
+
+/* line 19, sass/_partials/_home.scss */
+#home-top-right {
+  width: 30%;
+  float: right;
+  border: 2px #000 solid; }
+  /* line 24, sass/_partials/_home.scss */
+  #home-top-right > div:first-of-type {
+    background: #000;
+    color: #fff;
+    padding: 10px; }
+    /* line 29, sass/_partials/_home.scss */
+    #home-top-right > div:first-of-type h3:first-of-type {
+      color: #C9283C;
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+    /* line 35, sass/_partials/_home.scss */
+    #home-top-right > div:first-of-type h3:last-of-type {
+      font-weight: 400; }
+  /* line 40, sass/_partials/_home.scss */
+  #home-top-right > div:last-of-type {
+    margin-top: 1em; }
+    /* line 42, sass/_partials/_home.scss */
+    #home-top-right > div:last-of-type p {
+      padding: 0 10px; }

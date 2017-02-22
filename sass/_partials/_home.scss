@@ -1,0 +1,47 @@
+/* Home Page Styles
+------------------------------------------------*/
+#home-top {
+    overflow: hidden;
+}
+
+#home-top-left {
+    width: 65%;
+    float: left;
+
+    .entry-title {
+        span {
+            font-size: 2rem;
+            color:$links;
+        }
+    }
+}
+
+#home-top-right {
+    width:30%;
+    float: right;
+    border:2px #000 solid;
+
+    &>div:first-of-type {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+
+        h3:first-of-type {
+            color:$links;
+            text-transform: uppercase;
+            margin-bottom:5px;
+        }
+
+        h3:last-of-type{
+            font-weight: 400;
+        }
+    }
+
+    &>div:last-of-type {
+        margin-top: 1em;
+        p {
+            padding: 0 10px;
+        }
+    }
+}
+

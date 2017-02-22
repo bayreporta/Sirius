@@ -25,7 +25,7 @@ $media-expressions:(screen:"screen",
 					phoneRez: "(-webkit-min-device-pixel-ratio:2)",
 					retina2x: ("(-webkit-min-device-pixel-ratio: 2)", 
                     "(min-resolution: 192dpi)")) !default;
-$phone:">=phone","<tablet";
+$phone:">=phone","<tablet","phoneRez";
 $tablet:">=tablet","<desktop";
 $retina:">=desktop","retina2x";
 
@@ -34,7 +34,9 @@ $retina:">=desktop","retina2x";
 @import "_partials/include-media";
 @import "_partials/foundation";
 @import "_partials/header";
+@import "_partials/images";
 @import "_partials/content";
 @import "_partials/comments";
 @import "_partials/footer";
+@import "_partials/home";
 

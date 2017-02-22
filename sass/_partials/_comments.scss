@@ -37,5 +37,13 @@
         label {
             display:none;
         }
+
+        textarea {
+
+            @include media($tablet...){
+                margin-left: 1px;
+                width: 100%;
+            }
+        }
     }
 }

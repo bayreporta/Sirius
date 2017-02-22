@@ -262,18 +262,23 @@ article header {
   top: 50%;
   color: #000;
   z-index: 1000; }
-/* line 61, sass/_partials/_content.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 53, sass/_partials/_content.scss */
+  #content .post-edit-link {
+    display: none; } }
+
+/* line 65, sass/_partials/_content.scss */
 #content .entry-content {
   margin-bottom: 2em; }
-/* line 65, sass/_partials/_content.scss */
+/* line 69, sass/_partials/_content.scss */
 #content .entry-footer {
   background: #000;
   padding: 20px 0; }
-  /* line 69, sass/_partials/_content.scss */
+  /* line 73, sass/_partials/_content.scss */
   #content .entry-footer p {
     color: #fff;
     margin: 0 10px; }
-    /* line 73, sass/_partials/_content.scss */
+    /* line 77, sass/_partials/_content.scss */
     #content .entry-footer p:first-of-type {
       margin-bottom: 20px; }
 
@@ -305,6 +310,11 @@ article header {
   /* line 37, sass/_partials/_comments.scss */
   #comments .comment-form-comment label {
     display: none; }
+@media (min-width: 768px) and (max-width: 1027px) {
+  /* line 41, sass/_partials/_comments.scss */
+  #comments .comment-form-comment textarea {
+    margin-left: 1px;
+    width: 100%; } }
 
 /* Footer styles
 ------------------------------------------------*/

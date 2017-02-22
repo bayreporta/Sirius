@@ -56,6 +56,10 @@ article header {
         top: 50%;
         color:#000;
         z-index: 1000;
+
+        @include media($phone...){
+            display:none;
+        }
     }
 
     .entry-content {

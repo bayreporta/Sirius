@@ -2,6 +2,7 @@
 <section id="comments">
 	<h2>join the discussion</h2>
 	<?php 
+	if ( comments_open() ) comment_form();
 		if ( have_comments() ) : 
 			global $comments_by_type;
 			$comments_by_type = &separate_comments( $comments );
@@ -37,6 +38,5 @@
 			<?php 
 			endif; 
 		endif;
-	if ( comments_open() ) comment_form();
 	?>
 </section>

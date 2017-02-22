@@ -51,7 +51,7 @@ em {
   margin: 0 auto;
   width:80%;
 
-  @include media($retina_alias...){
+  @include media($retina...){
     width: 1920px;
   }
 }

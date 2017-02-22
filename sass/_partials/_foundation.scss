@@ -1,12 +1,32 @@
 /* Foundational styles
 ------------------------------------------------*/
-
-h1,h2,h3,h4 {
-	font-family: oswald, helvetica, san-serif;
+html, body {
+  font-size:100%;
 }
 
-div, p, a, span, li {
-	font-family: gotham, oswald, helvetica, san-serif;
+h1, h2, h3, h4 {
+  display: block;
+  font-weight: 700;
+}
+
+h1 { 
+  font-size: 2.5em;
+  margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 { 
+    font-size: 1.17em;
+    margin-top: 1em 0;
+}
+
+h4 { 
+    font-size: 1em;
+    margin-top: 1.33em 0;
 }
 
 a {
@@ -18,16 +38,12 @@ a {
 	}
 }
 
-p strong {
-	font-weight: 400;
-  	letter-spacing:2px;
-  	text-shadow:1px 0 0 $text,2px 0 0 $text;
+strong {
+  font-weight:700;
 }
 
-a strong {
-	font-weight: 400;
-  	letter-spacing:2px;
-  	text-shadow:1px 0 0 $links, 2px 0 0 $links;
+em {
+  font-style: italic;
 }
 
 #container {

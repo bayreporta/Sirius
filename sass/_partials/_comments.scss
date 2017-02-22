@@ -1,0 +1,41 @@
+/* Comment styles
+------------------------------------------------*/
+
+#comments {
+    margin-top: 2em;
+
+    .comment {
+        margin-top: 2em;
+        list-style-type: none;
+    }
+
+    .reply {
+        text-align: right;
+    }
+
+    .comment-author {
+
+        b {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .comment-metadata {
+        margin-bottom: .8em;
+
+        time {
+            font-size: .8em;
+        }
+
+        .edit-link {
+            margin-left: 1em;
+        }
+    }
+
+    .comment-form-comment {
+        label {
+            display:none;
+        }
+    }
+}

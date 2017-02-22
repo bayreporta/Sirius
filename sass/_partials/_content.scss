@@ -29,38 +29,50 @@ article header {
         padding-left: 10px;
         color: #555;
     }
-}
 
-.entry-title {
-    margin-bottom: 5px;
-}
+    .entry-title {
+        margin-bottom: 5px;
+    }
 
-h1.entry-title {
-    font-size: 3rem;
-    font-weight: 700;
+    h1.entry-title {
 
-    a {
-        text-decoration:none;
-        color:#000;
+        a {
+            text-decoration:none;
+            color:#000;
 
-        &:hover {
-            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
-}
 
-h2.entry-title {
+    h2.entry-title {
 
-}
+    }
 
-.post-edit-link {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    color:#000;
-    z-index: 1000;
-}
+    .post-edit-link {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        color:#000;
+        z-index: 1000;
+    }
 
-.entry-content {
-    margin-bottom: 2em;
+    .entry-content {
+        margin-bottom: 2em;
+    }
+
+    .entry-footer {
+        background: #000;
+        padding: 20px 0;
+
+        p {
+            color:#fff;
+            margin:0 10px;
+
+            &:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

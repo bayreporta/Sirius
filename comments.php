@@ -1,5 +1,6 @@
 <?php if ( 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) return; ?>
 <section id="comments">
+	<h2>join the discussion</h2>
 	<?php 
 		if ( have_comments() ) : 
 			global $comments_by_type;
@@ -30,7 +31,7 @@
 				<section id="trackbacks-list" class="comments">
 					<h3 class="comments-title"><?php echo '<span class="ping-count">' . $ping_count . '</span> ' . ( $ping_count > 1 ? __( 'Trackbacks', 'laniakea' ) : __( 'Trackback', 'laniakea' ) ); ?></h3>
 					<ul>
-						<?php wp_list_comments( 'type=pings&callback=laniakea_custom_pings' ); ?>
+						<?php wp_list_comments( 'type=pings&callback=sirius_custom_pings' ); ?>
 					</ul>
 				</section>
 			<?php 

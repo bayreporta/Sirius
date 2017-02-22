@@ -32,9 +32,9 @@ $retina_alias:">=desktop","retina2x";
 /* Import partial scss files
 ------------------------------------------------*/
 @import "_partials/include-media";
-@import "_partials/fonts";
 @import "_partials/foundation";
 @import "_partials/header";
 @import "_partials/content";
+@import "_partials/comments";
 @import "_partials/footer";
 

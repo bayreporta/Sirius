@@ -71,63 +71,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ------------------------------------------------*/
 /* Import partial scss files
 ------------------------------------------------*/
-/* FONT IMPORTS
-------------------------------------------------*/
-@font-face {
-  font-family: "gotham";
-  src: url("styles/gothamHTF/gothamHTF-Book.ttf"); }
-@font-face {
-  font-family: "oswald";
-  src: url("styles/oswald/Oswald-Light.ttf");
-  font-weight: 300; }
-@font-face {
-  font-family: "oswald";
-  src: url("styles/oswald/Oswald-Regular.ttf"); }
-@font-face {
-  font-family: "oswald";
-  src: url("styles/oswald/Oswald-Medium.ttf");
-  font-weight: 500; }
-@font-face {
-  font-family: "oswald";
-  src: url("styles/oswald/Oswald-Bold.ttf");
-  font-weight: 700; }
 /* Foundational styles
 ------------------------------------------------*/
-/* line 4, sass/_partials/_foundation.scss */
-h1, h2, h3, h4 {
-  font-family: oswald, helvetica, san-serif; }
+/* line 3, sass/_partials/_foundation.scss */
+html, body {
+  font-size: 100%; }
 
-/* line 8, sass/_partials/_foundation.scss */
-div, p, a, span, li {
-  font-family: gotham, oswald, helvetica, san-serif; }
+/* line 7, sass/_partials/_foundation.scss */
+h1, h2, h3, h4 {
+  display: block;
+  font-weight: 700; }
 
 /* line 12, sass/_partials/_foundation.scss */
+h1 {
+  font-size: 2.5em;
+  margin: 0.67em 0; }
+
+/* line 17, sass/_partials/_foundation.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 22, sass/_partials/_foundation.scss */
+h3 {
+  font-size: 1.17em;
+  margin-top: 1em 0; }
+
+/* line 27, sass/_partials/_foundation.scss */
+h4 {
+  font-size: 1em;
+  margin-top: 1.33em 0; }
+
+/* line 32, sass/_partials/_foundation.scss */
 a {
   color: #C9283C;
   text-decoration: none; }
-  /* line 16, sass/_partials/_foundation.scss */
+  /* line 36, sass/_partials/_foundation.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 21, sass/_partials/_foundation.scss */
-p strong {
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-shadow: 1px 0 0 #000, 2px 0 0 #000; }
+/* line 41, sass/_partials/_foundation.scss */
+strong {
+  font-weight: 700; }
 
-/* line 27, sass/_partials/_foundation.scss */
-a strong {
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-shadow: 1px 0 0 #C9283C, 2px 0 0 #C9283C; }
+/* line 45, sass/_partials/_foundation.scss */
+em {
+  font-style: italic; }
 
-/* line 33, sass/_partials/_foundation.scss */
+/* line 49, sass/_partials/_foundation.scss */
 #container {
   max-width: 1028px;
   margin: 0 auto;
   width: 80%; }
 @media (min-width: 1028px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1028px) and (min-resolution: 192dpi) {
-  /* line 33, sass/_partials/_foundation.scss */
+  /* line 49, sass/_partials/_foundation.scss */
   #container {
     width: 1920px; } }
 
@@ -170,11 +167,10 @@ a strong {
         -ms-transform:  translate(-50%, -40%);
         -webkit-transform:  translate(-50%, -40%);
         transform:  translate(-50%, -40%);
-        font-family: oswald, helvetica, san-serif;
         font-weight: 700;
         color: #fff;
         background: #C9283C; }
-      /* line 37, sass/_partials/_header.scss */
+      /* line 36, sass/_partials/_header.scss */
       #header #branding #site-title > div:last-of-type {
         text-transform: lowercase;
         font-size: 1.2em;
@@ -185,10 +181,10 @@ a strong {
         transform:  translate(-50%, -60%);
         text-align: center;
         width: 100%; }
-    /* line 49, sass/_partials/_header.scss */
+    /* line 48, sass/_partials/_header.scss */
     #header #branding img {
       max-width: 300px; }
-  /* line 54, sass/_partials/_header.scss */
+  /* line 53, sass/_partials/_header.scss */
   #header nav {
     height: 50px;
     background: #000;
@@ -196,11 +192,11 @@ a strong {
     position: absolute;
     bottom: 0;
     width: 100%; }
-  /* line 63, sass/_partials/_header.scss */
+  /* line 62, sass/_partials/_header.scss */
   #header .menu-main-menu-container {
     position: relative;
     height: inherit; }
-  /* line 68, sass/_partials/_header.scss */
+  /* line 67, sass/_partials/_header.scss */
   #header ul {
     display: inline-flex;
     position: absolute;
@@ -211,16 +207,16 @@ a strong {
     transform:  translateY(-50%);
     width: 90%;
     margin: 0 5%; }
-  /* line 77, sass/_partials/_header.scss */
+  /* line 76, sass/_partials/_header.scss */
   #header ul li {
     flex-grow: 1;
     text-align: center; }
-    /* line 81, sass/_partials/_header.scss */
+    /* line 80, sass/_partials/_header.scss */
     #header ul li a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase; }
-      /* line 86, sass/_partials/_header.scss */
+      /* line 85, sass/_partials/_header.scss */
       #header ul li a:hover {
         color: #C9283C; }
 
@@ -249,34 +245,66 @@ article header {
   border-left: 4px #ababab solid;
   padding-left: 10px;
   color: #555; }
-
-/* line 34, sass/_partials/_content.scss */
-.entry-title {
+/* line 33, sass/_partials/_content.scss */
+#content .entry-title {
   margin-bottom: 5px; }
-
-/* line 38, sass/_partials/_content.scss */
-h1.entry-title {
-  font-size: 3rem;
-  font-weight: 700; }
-  /* line 42, sass/_partials/_content.scss */
-  h1.entry-title a {
-    text-decoration: none;
-    color: #000; }
-    /* line 46, sass/_partials/_content.scss */
-    h1.entry-title a:hover {
-      text-decoration: underline; }
-
-/* line 56, sass/_partials/_content.scss */
-.post-edit-link {
+/* line 39, sass/_partials/_content.scss */
+#content h1.entry-title a {
+  text-decoration: none;
+  color: #000; }
+  /* line 43, sass/_partials/_content.scss */
+  #content h1.entry-title a:hover {
+    text-decoration: underline; }
+/* line 53, sass/_partials/_content.scss */
+#content .post-edit-link {
   position: fixed;
   left: 0;
   top: 50%;
   color: #000;
   z-index: 1000; }
-
-/* line 64, sass/_partials/_content.scss */
-.entry-content {
+/* line 61, sass/_partials/_content.scss */
+#content .entry-content {
   margin-bottom: 2em; }
+/* line 65, sass/_partials/_content.scss */
+#content .entry-footer {
+  background: #000;
+  padding: 20px 0; }
+  /* line 69, sass/_partials/_content.scss */
+  #content .entry-footer p {
+    color: #fff;
+    margin: 0 10px; }
+    /* line 73, sass/_partials/_content.scss */
+    #content .entry-footer p:first-of-type {
+      margin-bottom: 20px; }
+
+/* Comment styles
+------------------------------------------------*/
+/* line 4, sass/_partials/_comments.scss */
+#comments {
+  margin-top: 2em; }
+  /* line 7, sass/_partials/_comments.scss */
+  #comments .comment {
+    margin-top: 2em;
+    list-style-type: none; }
+  /* line 12, sass/_partials/_comments.scss */
+  #comments .reply {
+    text-align: right; }
+  /* line 18, sass/_partials/_comments.scss */
+  #comments .comment-author b {
+    font-weight: 700;
+    text-transform: uppercase; }
+  /* line 24, sass/_partials/_comments.scss */
+  #comments .comment-metadata {
+    margin-bottom: .8em; }
+    /* line 27, sass/_partials/_comments.scss */
+    #comments .comment-metadata time {
+      font-size: .8em; }
+    /* line 31, sass/_partials/_comments.scss */
+    #comments .comment-metadata .edit-link {
+      margin-left: 1em; }
+  /* line 37, sass/_partials/_comments.scss */
+  #comments .comment-form-comment label {
+    display: none; }
 
 /* Footer styles
 ------------------------------------------------*/

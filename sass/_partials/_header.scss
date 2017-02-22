@@ -28,7 +28,6 @@
    				top:40%;
    				display: inline;
         		@include simple-transform(null, null, -50%, -40%);
-        		font-family: oswald, helvetica, san-serif;
         		font-weight: 700;
         		color:#fff;
         		background:$links;

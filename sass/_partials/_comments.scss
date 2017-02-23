@@ -4,6 +4,10 @@
 #comments {
     margin-top: 2em;
 
+    #comments-list>ul {
+        margin-left:0;
+    }
+
     .comment {
         margin-top: 2em;
         list-style-type: none;

@@ -36,7 +36,7 @@ function sirius_theme_support(){
 
 function sirius_custom_header_setup() {
     $header_info = array(
-        'default-image'      => get_template_directory_uri() . 'images/oakland.png',
+        'default-image'      => get_template_directory_uri() . '/images/oakland.png',
         'width'              => 660,
         'height'             => 388,
         'flex-width'         => true,
@@ -46,7 +46,7 @@ function sirius_custom_header_setup() {
 	 
 	$header_images = array(
 	    'oakland' => array(
-	            'url'           => get_template_directory_uri() . 'images/oakland.png',
+	            'url'           => get_template_directory_uri() . '/images/oakland.png',
 	            'thumbnail_url' => get_template_directory_uri() . '/images/oakland.png',
 	            'description'   => 'Oakland'
 	    )	     

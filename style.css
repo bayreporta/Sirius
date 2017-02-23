@@ -323,30 +323,33 @@ hr {
 #comments {
   margin-top: 2em; }
   /* line 7, sass/_partials/_comments.scss */
+  #comments #comments-list > ul {
+    margin-left: 0; }
+  /* line 11, sass/_partials/_comments.scss */
   #comments .comment {
     margin-top: 2em;
     list-style-type: none; }
-  /* line 12, sass/_partials/_comments.scss */
+  /* line 16, sass/_partials/_comments.scss */
   #comments .reply {
     text-align: right; }
-  /* line 18, sass/_partials/_comments.scss */
+  /* line 22, sass/_partials/_comments.scss */
   #comments .comment-author b {
     font-weight: 700;
     text-transform: uppercase; }
-  /* line 24, sass/_partials/_comments.scss */
+  /* line 28, sass/_partials/_comments.scss */
   #comments .comment-metadata {
     margin-bottom: .8em; }
-    /* line 27, sass/_partials/_comments.scss */
+    /* line 31, sass/_partials/_comments.scss */
     #comments .comment-metadata time {
       font-size: .8em; }
-    /* line 31, sass/_partials/_comments.scss */
+    /* line 35, sass/_partials/_comments.scss */
     #comments .comment-metadata .edit-link {
       margin-left: 1em; }
-  /* line 37, sass/_partials/_comments.scss */
+  /* line 41, sass/_partials/_comments.scss */
   #comments .comment-form-comment label {
     display: none; }
 @media (min-width: 768px) and (max-width: 1027px) {
-  /* line 41, sass/_partials/_comments.scss */
+  /* line 45, sass/_partials/_comments.scss */
   #comments .comment-form-comment textarea {
     margin-left: 1px;
     width: 100%; } }

@@ -25,11 +25,13 @@ function loadVideoes(v){
 	        	player = document.querySelectorAll('.video-player');
 
 	        //opacity on active video and hide play button
-	        jQuery('.video-thumb').removeClass('video-playing');
-	        jQuery('.play-button').show();
-        	this.childNodes[1].style.display = 'none';
-	        this.className += " video-playing";
-
+	        if (this.className !== 'video-player'){
+	        	jQuery('.video-thumb').removeClass('video-playing');
+		        jQuery('.play-button').show();
+	        	this.childNodes[1].style.display = 'none';
+		        this.className += " video-playing";
+	        }
+	        
             iframe.setAttribute( "frameborder", "0" );
             iframe.setAttribute( "allowfullscreen", "" );
             iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );

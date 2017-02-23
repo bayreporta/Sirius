@@ -11,14 +11,14 @@
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
 	<header id="header" role="banner">
-		<section id="branding">
+		<a href="<?php echo get_site_url(); ?>"><section id="branding">
 			<img alt="" src="<?php header_image(); ?>">
 
 			<div id="site-title">
 				<div>Oakland</div>
 				<div>Warehouse Coalition</div>
 			</div>
-		</section>
+		</section></a>
 		<nav id="menu" role="navigation">			
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>

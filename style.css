@@ -173,6 +173,7 @@ em {
       /* line 36, sass/_partials/_header.scss */
       #header #branding #site-title > div:last-of-type {
         text-transform: lowercase;
+        color: #000;
         font-size: 1.2em;
         top: 60%;
         -moz-transform:  translate(-50%, -60%);
@@ -181,10 +182,10 @@ em {
         transform:  translate(-50%, -60%);
         text-align: center;
         width: 100%; }
-    /* line 48, sass/_partials/_header.scss */
+    /* line 49, sass/_partials/_header.scss */
     #header #branding img {
       max-width: 300px; }
-  /* line 53, sass/_partials/_header.scss */
+  /* line 54, sass/_partials/_header.scss */
   #header nav {
     height: 50px;
     background: #000;
@@ -192,11 +193,11 @@ em {
     position: absolute;
     bottom: 0;
     width: 100%; }
-  /* line 62, sass/_partials/_header.scss */
+  /* line 63, sass/_partials/_header.scss */
   #header .menu-main-menu-container {
     position: relative;
     height: inherit; }
-  /* line 67, sass/_partials/_header.scss */
+  /* line 68, sass/_partials/_header.scss */
   #header ul {
     display: inline-flex;
     position: absolute;
@@ -207,16 +208,16 @@ em {
     transform:  translateY(-50%);
     width: 90%;
     margin: 0 5%; }
-  /* line 76, sass/_partials/_header.scss */
+  /* line 77, sass/_partials/_header.scss */
   #header ul li {
     flex-grow: 1;
     text-align: center; }
-    /* line 80, sass/_partials/_header.scss */
+    /* line 81, sass/_partials/_header.scss */
     #header ul li a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase; }
-      /* line 85, sass/_partials/_header.scss */
+      /* line 86, sass/_partials/_header.scss */
       #header ul li a:hover {
         color: #C9283C; }
 

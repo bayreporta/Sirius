@@ -16,6 +16,7 @@ function loadVideoes(v){
         //add initial opacity
         if (i === 0 && v.length > 1){
         	v[i].className += " video-playing";
+	        v[i].childNodes[0].style.display = 'none';
         	v[i].childNodes[1].style.display = 'none';
         }
 
@@ -27,7 +28,9 @@ function loadVideoes(v){
 	        //opacity on active video and hide play button
 	        if (this.className !== 'video-player'){
 	        	jQuery('.video-thumb').removeClass('video-playing');
-		        jQuery('.play-button').show();
+		        jQuery('.play-button').add('.video-thumb img').show();
+		        console.log(this)
+	        	this.childNodes[0].style.display = 'none';
 	        	this.childNodes[1].style.display = 'none';
 		        this.className += " video-playing";
 	        }

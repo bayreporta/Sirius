@@ -87,3 +87,19 @@ function sirius_comments_number( $count ){
 	}
 }
 
+/* #5: Populate videos for the home page
+---------------------------------------------------------------------------*/
+function owc_populate_videos(&$data){
+	$ret = '';
+
+	$size = sizeof($data);
+	for ($i = 0 ; $i < $size ; $i++){
+		$ret .= '<div class="video-thumb-container">';
+			$ret .= '<div class="video-thumb" title="'. $data[$i]['video_title'] .'" data-embed="'. $data[$i]['embed_code'] .'">';
+				$ret .= '<div class="play-button"></div>';
+			$ret .= '</div>';
+		$ret .= '</div>';
+	}
+	unset($data);
+	return $ret;
+}

@@ -15,73 +15,24 @@
 						<?php the_content(); ?>
 						<div class="entry-links"><?php wp_link_pages(); ?></div>
 					</section>
-					<section class="video-player" data-embed="rStL7niR7gs">
+					<?php $videos = get_field('owc_video_list'); ?>
+					<section class="video-player" data-embed="<?php echo $videos[0]['embed_code']; ?>">
 						<div class="play-button"></div>
 					</section>
 				</div>
 				<div id="home-top-right">
-					<div>
-						<h3>Happening Now</h3>
-						<h3>Oakland City Council Bill</h3>
+					<div>						
+						<h3><?php print get_field('hn_header'); ?></h3>
+						<h3><?php print get_field('hn_headline'); ?></h3>
 					</div>
 					<div>
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Sed quis
-							sem ac tellus fermentum dictum.
-							Praesent egestas justo erat, sit amet
-							lacinia purus sollicitudin vel. Mauris
-							nunc lacus, pretium et condimentum
-							id, auctor ut sem.</p>
-
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Sed quis
-							sem ac tellus fermentum dictum.
-							Praesent egestas justo erat, sit amet
-							lacinia purus sollicitudin vel. Mauris
-							nunc lacus, pretium et condimentum
-							id, auctor ut sem.</p>
-							<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Sed quis
-							sem ac tellus fermentum dictum.
-							Praesent egestas justo erat, sit amet
-							lacinia purus sollicitudin vel. Mauris
-							nunc lacus, pretium et condimentum
-							id, auctor ut sem.</p>
-						<p>Learn how to <a href="#">get involved</a>.</p>
+						<?php print get_field('hn_body_text'); ?>
+						<?php print get_field('hn_call_to_action'); ?>
 					</div>
 				</div>
 			</div>
 			<div id="home-bottom">
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="rStL7niR7gs">
-						<div class="play-button"></div>
-					</div>
-				</div>	
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="Mky11UJb9AY">
-						<div class="play-button"></div>
-					</div>
-				</div>	
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="s7tWHJfhiyo">
-						<div class="play-button"></div>
-					</div>
-				</div>	
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="OUS9mM8Xbbw">
-						<div class="play-button"></div>
-					</div>
-				</div>	
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="3uBcq1x7P34">
-						<div class="play-button"></div>
-					</div>
-				</div>	
-				<div class="video-thumb-container">
-					<div class="video-thumb" data-embed="rE3j_RHkqJc">
-						<div class="play-button"></div>
-					</div>
-				</div>		
+				<?php print owc_populate_videos($videos); ?>
 			</div>
 		</article>
 		<?php if ( ! post_password_required() ) comments_template( '', true ); ?>

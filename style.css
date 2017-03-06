@@ -397,28 +397,29 @@ hr {
 #home-top-right {
   width: 30%;
   float: right;
-  border: 2px #000 solid; }
-  /* line 26, sass/_partials/_home.scss */
+  border: 2px #000 solid;
+  margin-bottom: 2em; }
+  /* line 27, sass/_partials/_home.scss */
   #home-top-right > div:first-of-type {
     background: #000;
     color: #fff;
     padding: 10px; }
-    /* line 31, sass/_partials/_home.scss */
+    /* line 32, sass/_partials/_home.scss */
     #home-top-right > div:first-of-type h3:first-of-type {
       color: #C9283C;
       text-transform: uppercase;
       margin-bottom: 5px; }
-    /* line 37, sass/_partials/_home.scss */
+    /* line 38, sass/_partials/_home.scss */
     #home-top-right > div:first-of-type h3:last-of-type {
       font-weight: 400; }
-  /* line 42, sass/_partials/_home.scss */
+  /* line 43, sass/_partials/_home.scss */
   #home-top-right > div:last-of-type {
     margin-top: 1em; }
-    /* line 44, sass/_partials/_home.scss */
+    /* line 45, sass/_partials/_home.scss */
     #home-top-right > div:last-of-type p {
       padding: 0 10px; }
 
-/* line 50, sass/_partials/_home.scss */
+/* line 51, sass/_partials/_home.scss */
 #home-bottom {
   overflow: hidden; }
 

@@ -5,6 +5,32 @@
     position: relative;
 	height:250px;
 
+    #burger {
+        display: none;
+        position:absolute;
+        top:0;
+        font-size: 2rem;
+        left:10px;
+        cursor: pointer;
+        z-index: 100;
+
+        i {
+            color:#fff;
+        }
+
+        @include media($phone...){
+            display:block;
+            top:50%;
+            @include simple-transform(null,null,null,-50%);
+        }
+
+        @include media($tablet...){
+            display:block;
+            top:50%;
+            @include simple-transform(null,null,null,-50%);
+        }
+    }
+
 	#branding {
 		position:absolute;
         height: 200px;
@@ -42,6 +68,10 @@
         		@include simple-transform(null, null, null, -65%);
                 font-weight:300;  
                 text-align:right; 
+
+                @include media($phone...){
+                    display:none;
+                }
 	        }
         }
 
@@ -67,6 +97,20 @@
     .menu-main-menu-container {
     	position: relative;
     	height: inherit;
+
+        @include media($phone...){
+            display:none;
+            position: absolute;
+            left: 0;
+            width: 60%;
+            background: #000;
+            max-width: 225px;
+            top: 49px;
+        }
+
+        @include media($tablet...){
+            display:none;
+        }
     }
 
     ul {
@@ -75,12 +119,34 @@
     	top: 50%;
         @include simple-transform(null, null, null, -50%);
    	 	width:90%;
-   	 	margin:0 5%;
+   	 	padding:0 5%;
+        background:#000;
+
+        @include media($phone...){
+            display: block;
+            position: relative;
+            top: 0;
+            @include simple-transform(null, null, null, 0);
+        }
+
+        @include media($tablet...){
+            
+        }
     }
 
     ul li {
     	flex-grow:1;
     	text-align: center;
+
+        @include media($phone...){
+            flex-grow:0;
+            text-align: left;
+            padding-bottom: 15px;
+        }
+
+        @include media($tablet...){
+            
+        }
 
     	a {
     		color:#fff;

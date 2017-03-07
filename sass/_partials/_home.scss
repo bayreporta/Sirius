@@ -8,6 +8,11 @@
     width: 65%;
     float: left;
 
+    @include media($phone...){
+        width: 100%;
+        float:none;
+    }
+
     .entry-title {
         margin-top:0;
 
@@ -23,6 +28,12 @@
     float: right;
     border:2px #000 solid;
     margin-bottom: 2em;
+
+    @include media($phone...){
+        width: 100%;
+        float:none;
+        border:none;
+    }
 
     &>div:first-of-type {
         background: #000;
@@ -50,5 +61,9 @@
 
 #home-bottom {
     overflow: hidden;
+
+    @include media($phone...){
+        display:none;
+    }
 }
 

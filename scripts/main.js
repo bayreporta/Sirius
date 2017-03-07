@@ -42,8 +42,7 @@ function loadVideoes(v){
             player[0].innerHTML = "";
             player[0].appendChild( iframe );
     	} );
-
-	}
+ 	}
 }
 
 jQuery(document).ready(function(){
@@ -51,6 +50,33 @@ jQuery(document).ready(function(){
 		otherVideos = document.querySelectorAll('.video-thumb');
 
 	loadVideoes(mainVideo);
-	loadVideoes(otherVideos);
-})
+	if (window.innerHeight >= 768){
+		loadVideoes(otherVideos);
+	}
+});
 
+/* #2: Nav bar operation on mobile
+---------------------------------------------------------------------------*/
+jQuery(document).ready(function(){
+	jQuery('#burger').on('click', function(){
+		if (jQuery(this).hasClass('toggled')){
+			jQuery(this).removeClass('toggled');
+			jQuery('.menu-main-menu-container').hide();
+
+		}
+		else {
+			jQuery(this).addClass('toggled');
+			jQuery('.menu-main-menu-container').show();
+		}		
+	});
+});
+
+/* #3: Jump back to video player on thumb click
+---------------------------------------------------------------------------*/
+jQuery(document).ready(function(){
+	jQuery('.video-thumb').on('click', function(){
+		jQuery('html, body').animate({
+    		scrollTop: jQuery('.video-player').offset().top
+    	}, 300);
+	});
+});

@@ -7,8 +7,8 @@
 
 	#branding {
 		position:absolute;
-		left: 10%;
-        @include simple-transform(null, null, -10%);
+        height: 200px;
+        width: 100%;		
 
         #site-title {
         	position:absolute;
@@ -16,10 +16,12 @@
         	@include simple-transform(null, null, null, -50%);
     		width: 100%;
     		height:200px;
+            
 
     		&>div {
     			position:absolute;
-    			left:50%;
+                left:13%;
+                width:80%;
     		}
 
         	&>div:first-of-type {
@@ -27,20 +29,19 @@
    				font-size: 2em;
    				top:40%;
    				display: inline;
-        		@include simple-transform(null, null, -50%, -40%);
+        		@include simple-transform(null, null, null, -40%);
         		font-weight: 700;
         		color:#fff;
         		background:$links;
 	        }
 
 	        &>div:last-of-type {
-	        	text-transform: lowercase;
                 color:#000;
-   				font-size: 1.2em;
-   				top:60%;
-        		@include simple-transform(null, null, -50%, -60%);
-   				text-align:center;
-        		width:100%;
+   				font-size: 1.7em;
+   				top:65%;
+        		@include simple-transform(null, null, null, -65%);
+                font-weight:300;  
+                text-align:right; 
 	        }
         }
 
@@ -48,6 +49,9 @@
     	
 		img {
 			max-width:300px;
+            position: absolute;
+            left: 10%;
+            @include simple-transform(null, null, -10%);
 		}
 	}
 

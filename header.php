@@ -15,8 +15,8 @@
 			<img alt="" src="<?php header_image(); ?>">
 
 			<div id="site-title">
-				<div>Oakland</div>
-				<div>Warehouse Coalition</div>
+				<div><?php print bloginfo('name'); ?></div>
+				<div><?php print bloginfo('description'); ?></div>
 			</div>
 		</section></a>
 		<nav id="menu" role="navigation">			

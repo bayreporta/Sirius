@@ -138,11 +138,8 @@ em {
   /* line 8, sass/_partials/_header.scss */
   #header #branding {
     position: absolute;
-    left: 10%;
-    -moz-transform:  translateX(-10%);
-    -ms-transform:  translateX(-10%);
-    -webkit-transform:  translateX(-10%);
-    transform:  translateX(-10%); }
+    height: 200px;
+    width: 100%; }
     /* line 13, sass/_partials/_header.scss */
     #header #branding #site-title {
       position: absolute;
@@ -153,39 +150,45 @@ em {
       transform:  translateY(-50%);
       width: 100%;
       height: 200px; }
-      /* line 20, sass/_partials/_header.scss */
+      /* line 21, sass/_partials/_header.scss */
       #header #branding #site-title > div {
         position: absolute;
-        left: 50%; }
-      /* line 25, sass/_partials/_header.scss */
+        left: 13%;
+        width: 80%; }
+      /* line 27, sass/_partials/_header.scss */
       #header #branding #site-title > div:first-of-type {
         text-transform: uppercase;
         font-size: 2em;
         top: 40%;
         display: inline;
-        -moz-transform:  translate(-50%, -40%);
-        -ms-transform:  translate(-50%, -40%);
-        -webkit-transform:  translate(-50%, -40%);
-        transform:  translate(-50%, -40%);
+        -moz-transform:  translateY(-40%);
+        -ms-transform:  translateY(-40%);
+        -webkit-transform:  translateY(-40%);
+        transform:  translateY(-40%);
         font-weight: 700;
         color: #fff;
         background: #C9283C; }
-      /* line 36, sass/_partials/_header.scss */
+      /* line 38, sass/_partials/_header.scss */
       #header #branding #site-title > div:last-of-type {
-        text-transform: lowercase;
         color: #000;
-        font-size: 1.2em;
-        top: 60%;
-        -moz-transform:  translate(-50%, -60%);
-        -ms-transform:  translate(-50%, -60%);
-        -webkit-transform:  translate(-50%, -60%);
-        transform:  translate(-50%, -60%);
-        text-align: center;
-        width: 100%; }
-    /* line 49, sass/_partials/_header.scss */
+        font-size: 1.7em;
+        top: 65%;
+        -moz-transform:  translateY(-65%);
+        -ms-transform:  translateY(-65%);
+        -webkit-transform:  translateY(-65%);
+        transform:  translateY(-65%);
+        font-weight: 300;
+        text-align: right; }
+    /* line 50, sass/_partials/_header.scss */
     #header #branding img {
-      max-width: 300px; }
-  /* line 54, sass/_partials/_header.scss */
+      max-width: 300px;
+      position: absolute;
+      left: 10%;
+      -moz-transform:  translateX(-10%);
+      -ms-transform:  translateX(-10%);
+      -webkit-transform:  translateX(-10%);
+      transform:  translateX(-10%); }
+  /* line 58, sass/_partials/_header.scss */
   #header nav {
     height: 50px;
     background: #000;
@@ -193,11 +196,11 @@ em {
     position: absolute;
     bottom: 0;
     width: 100%; }
-  /* line 63, sass/_partials/_header.scss */
+  /* line 67, sass/_partials/_header.scss */
   #header .menu-main-menu-container {
     position: relative;
     height: inherit; }
-  /* line 68, sass/_partials/_header.scss */
+  /* line 72, sass/_partials/_header.scss */
   #header ul {
     display: inline-flex;
     position: absolute;
@@ -208,16 +211,16 @@ em {
     transform:  translateY(-50%);
     width: 90%;
     margin: 0 5%; }
-  /* line 77, sass/_partials/_header.scss */
+  /* line 81, sass/_partials/_header.scss */
   #header ul li {
     flex-grow: 1;
     text-align: center; }
-    /* line 81, sass/_partials/_header.scss */
+    /* line 85, sass/_partials/_header.scss */
     #header ul li a {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase; }
-      /* line 86, sass/_partials/_header.scss */
+      /* line 90, sass/_partials/_header.scss */
       #header ul li a:hover {
         color: #C9283C; }
 

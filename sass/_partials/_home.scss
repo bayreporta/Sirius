@@ -13,6 +13,11 @@
         float:none;
     }
 
+    @include media($tablet...){
+        width: 100%;
+        float:none;
+    }
+
     .entry-title {
         margin-top:0;
 
@@ -30,6 +35,12 @@
     margin-bottom: 2em;
 
     @include media($phone...){
+        width: 100%;
+        float:none;
+        border:none;
+    }
+
+    @include media($tablet...){
         width: 100%;
         float:none;
         border:none;

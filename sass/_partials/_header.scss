@@ -106,10 +106,18 @@
             background: #000;
             max-width: 225px;
             top: 49px;
+            z-index:99;
         }
 
         @include media($tablet...){
             display:none;
+            position: absolute;
+            left: 0;
+            width: 60%;
+            background: #000;
+            max-width: 225px;
+            top: 49px;
+            z-index:99;
         }
     }
 
@@ -130,7 +138,10 @@
         }
 
         @include media($tablet...){
-            
+            display: block;
+            position: relative;
+            top: 0;
+            @include simple-transform(null, null, null, 0);
         }
     }
 
@@ -145,7 +156,9 @@
         }
 
         @include media($tablet...){
-            
+            flex-grow:0;
+            text-align: left;
+            padding-bottom: 15px;
         }
 
     	a {
